@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+}
+
+#home {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+#home h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#home h2 {
+    color: #6c63ff;
+    margin-bottom: 15px;
+}
+
+#home p {
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* About Section */
+
+#about {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: white;
+}
+
+#about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Education Section */
+
+#education {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#education h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.education-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.education-box h3 {
+    color: #6c63ff;
+    margin-bottom: 15px;
+}
+
+.education-box p {
+    margin: 10px;
+}
+/* Skills Section */
+
+#skills {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: white;
+}
+
+#skills h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    background-color: #f5f5f5;
+    padding: 30px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.skill-box h3 {
+    color: #6c63ff;
+    margin-bottom: 15px;
+}
+
+.skill-box p {
+    font-size: 14px;
+}
+/* Projects Section */
+
+#projects {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#projects h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    background-color: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.project-box h3 {
+    color: #6c63ff;
+    margin-bottom: 15px;
+}
+
+.project-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+/* Resume Section */
+
+#resume {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: white;
+}
+
+#resume h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#resume p {
+    margin-bottom: 25px;
+}
+/* Contact Section */
+
+#contact {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 25px auto 0;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#contact textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#contact button {
+    width: 100%;
+}
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    #home {
+        padding: 80px 20px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+    .skills-container,
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-box,
+    .project-box {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
